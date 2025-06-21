@@ -9,7 +9,7 @@ function generatePDF() {
   button.textContent = "Generating...";
   statusText.textContent = "";
 
-  fetch("/generate", {
+  fetch("https://biography-generator-y8wq.onrender.com/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name })
